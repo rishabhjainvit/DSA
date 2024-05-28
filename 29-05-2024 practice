@@ -1,0 +1,34 @@
+//calculator using switch case
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  int a , b;
+  cout<<"enter the value of a"<<endl;
+  cin>>a;
+
+  cout<<"enter the value of b"<<endl;
+  cin>>b;
+
+  char op;
+  cout<<"enter the opertaion that you want to perfotm"<<endl;
+  cin>>op;
+
+  switch(op){
+
+    case 'a': cout<< (a+b)<<endl;
+             break;
+    case 'b': cout<<(a-b)<<endl;
+             break;
+    case 'c':cout<<(a*b)<<endl;
+             break;
+    case 'd': cout<<(a/b)<<endl;
+             break;
+    case 'e': cout<<(a%b)<<endl;
+             break;
+    default: cout<<"[lease enter the valid operation"<<endl;
+  }
+
+  
+}

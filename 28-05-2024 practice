@@ -1,0 +1,103 @@
+
+//bitwise operator
+
+#include<iostream>
+using namespace std;
+
+int main(){
+  int a = 6;
+  int b = 4;
+
+  cout<<"a&b"<<(a&b)<<endl;
+  cout<<"a|b"<<(a|b)<<endl;
+  cout<<"~a"<<(~a)<<endl;
+  cout<<"a^b"<<(a^b)<<endl;
+
+  cout<<"17>>2"<<(17>>2)<<endl;
+  cout<<"17>>1"<<(17>>1)<<endl;
+  cout<<"21<<2"<<(21<<2)<<endl;
+  cout<<"32<<1"<<(32<<1)<<endl;
+}
+
+
+// sum of number using for loop
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n;
+  cout<<"enter the value of n"<<endl;
+  cin>>n;
+
+  int sum = 0;
+  for(int i=1; i<=n;i++){
+    sum=sum+i;
+    
+  }
+  cout<<"sum of n number is"<<sum<<endl;
+}
+
+//fibonaci series 
+#include<iostream>
+using namespace std;
+
+int main(){
+   int n = 10;
+
+  int a = 0;
+  int b = 1;
+  cout<<a<<""<<b<<"";
+
+  for(int i =1 ; i<=n ; i++){
+   int nextNumber=a+b;
+    cout<<nextNumber<<"";
+    a=b;
+    b=nextNumber;
+  
+  }
+}
+
+//number is prime or not prime using a for loop condition
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n;
+  cout<<"enter the value of n"<<endl;
+  cin>>n;
+
+  bool isprime = 1;
+
+  for(int i =2 ; i<n ; i++){
+    if(n%i==0){
+      isprime=0;
+      break;
+    }
+    
+  }
+  if(isprime==0){
+    cout<<"not aprime number"<<endl;
+  }else{
+    cout<<"is a prime number"<<endl;
+  }
+}
+
+// code using continue function
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int n ;
+  cout<<"enter the value of n"<<endl;
+  cin>>n;
+  for( int i = 0 ; i <5 ; i++){
+    cout<<"hi"<<endl;
+    cout<<"hey"<<endl;
+    continue;
+    cout<<"reply to katde "<<endl;
+  }
+    
+}
+
+//

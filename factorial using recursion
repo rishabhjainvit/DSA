@@ -61,3 +61,28 @@ int main(){
   cout<<""<<endl ;
   print(n);
 }
+
+/// source and destination to reache home ///
+#include <iostream>
+using namespace std;
+
+void reachhome(int src ,int dest){
+  cout<<"source "<<src<<"destinatiom "<<dest<<endl;
+  if(src==dest){
+    cout<<"reached home"<<endl;
+    return ;
+    
+  }
+
+
+  src++;
+    reachhome(src,dest);
+}
+
+int main(){
+
+  int dest=10;
+  int src=1;
+  cout<<""<<endl;
+  reachhome(src,dest);
+}

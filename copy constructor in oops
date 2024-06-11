@@ -1,0 +1,91 @@
+#include<iostream>
+using namespace std;
+class hero{
+
+
+int health;
+public:
+char level;
+
+hero(){
+  cout<<"constructor called"<<endl;
+  
+}
+hero(int health){
+  this->health=health;
+}
+hero(int health,char level){
+  this->health=health;
+  this->level = level;
+}
+
+void print(){
+  cout<<"health"<<this->health<<endl;
+  cout<<"level"<<this->level<<endl;
+  
+}
+int gethealth(){
+  return health;
+}
+ int getlevel(){
+   return level;
+ }
+void sethealth(int h){
+  health = h;
+}
+void setlevel(int l){
+  level =l;
+}
+
+};
+int main(){
+
+hero S(70,'c');
+  S.print();
+
+  hero R(S);
+  R.print();
+  
+
+  
+  //hero h1(10);
+  //cout<<"adress of h1"<<&h1<<endl;
+  //h1.gethealth();
+
+  //h1.getlevel();
+
+  //hero temp(22,'b');
+
+//hero a;
+  //a.sethealth(70);
+  //a.setlevel('a');
+  //cout<<"health is"<<a.gethealth()<<endl;
+  //cout<<"level is "<<a.getlevel()<<endl;
+
+  //hero *b = new hero;
+  //b->sethealth(80);
+  ///b->setlevel('b');
+
+  //cout<< " health is "<<(*b).gethealth()<<endl;
+  //cout<<" level is "<<(*b).getlevel()<<endl;
+
+  //cout<<"health is"<<b->gethealth()<<endl;
+  //cout<<"level is "<<b->getlevel()<<endl; 
+
+  ///*
+  
+//hero h1;
+  //cout<<"health is"<<h1.gethealth()<<endl;
+  //h1.sethealth(70);
+ // h1.health=70;
+  //h1.level='C';
+  //cout<<"size of h1"<<sizeof(h1)<<endl;
+  //cout<<"health is"<<h1.health<<endl;
+  //cout<<"level is"<<h1.level<<endl;
+
+  return 0;
+  
+
+  
+
+}
